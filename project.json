@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet5-MvcSandbox-862a6499-ef4f-434f-9a7c-de6d9e1087d3",
   "version": "1.0.0-*",
   "compilationOptions": {
@@ -33,7 +33,11 @@
   },
 
   "frameworks": {
-    "dnx451": { },
+    "dnx451": {
+      "dependencies": {
+        "Microsoft.AspNet.Web.Helpers.Mvc": "2.0.20710"
+      }
+    },
     "dnxcore50": { }
   },
 
