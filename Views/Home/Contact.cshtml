@@ -1,17 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Contact";
+﻿@using Microsoft.Web.Helpers;
+
+@{ 
+    var user = "cher";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkShare Example</title>
+</head>
+<body>
+    <h1>LinkShare Example</h1>
+    Share: @(new HtmlString(LinkShare.GetHtml("LinkShare Example", linkSites: new[]{
+        LinkShareSite.Reddit, LinkShareSite.Facebook, LinkShareSite.Twitter}).ToHtmlString()))
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <h2>@ViewBag.Message</h2>
+
+    <h2>LinkShare</h2>
+    @(new HtmlString(LinkShare.GetHtml("MVC 3 in Action").ToHtmlString()))
+
+    <h1>Xbox Gamer Card</h1>
+    @(new HtmlString(GamerCard.GetHtml("jpmigraine").ToHtmlString()))
+
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<provide appId>";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <h1>Facebook Like Example</h1>
+    <div class="fb-like" data-href="/web-pages/overview" data-layout="standard"
+         data-action="like" data-show-faces="true" data-share="true"></div>
+
+    <a class="twitter-timeline" href="https://twitter.com/cher" data-widget-id="685603441754779648">Tweets by @user</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+    <h1>Twitter Buttons and Widgets</h1>
+
+
+</body>
+</html>

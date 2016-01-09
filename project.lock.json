@@ -126,6 +126,9 @@
           "lib/dnx451/EntityFramework.Relational.Design.dll": {}
         }
       },
+      "Facebook.Helper/1.0.0": {
+        "type": "package"
+      },
       "Ix-Async/1.2.5": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1098,35 +1101,57 @@
           "lib/net451/Microsoft.AspNet.Tooling.Razor.dll": {}
         }
       },
-      "Microsoft.AspNet.Web.Helpers.Mvc/2.0.20710": {
+      "Microsoft.AspNet.WebHelpers/3.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.WebPages": "[2.0.0, 2.1.0)"
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages.WebData": "[3.2.3, 3.3.0)"
         },
         "compile": {
-          "lib/net40/Microsoft.Web.Helpers.dll": {}
+          "lib/net45/Microsoft.Web.Helpers.dll": {}
         },
         "runtime": {
-          "lib/net40/Microsoft.Web.Helpers.dll": {}
+          "lib/net45/Microsoft.Web.Helpers.dll": {}
         }
       },
-      "Microsoft.AspNet.WebPages/2.0.20505": {
+      "Microsoft.AspNet.WebPages/3.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Razor": "2.0.20505",
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
           "Microsoft.Web.Infrastructure": "1.0.0"
         },
         "compile": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {}
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {}
         },
         "runtime": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {}
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages.Data/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/WebMatrix.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.Data.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages.WebData/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebPages.Data": null
+        },
+        "compile": {
+          "lib/net45/WebMatrix.WebData.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.WebData.dll": {}
         }
       },
       "Microsoft.AspNet.WebUtilities/1.0.0-rc1-final": {
@@ -2096,6 +2121,9 @@
         "runtime": {
           "lib/net45/_._": {}
         }
+      },
+      "Twitter.Helper/1.0.0": {
+        "type": "package"
       }
     },
     "DNXCore,Version=v5.0": {
@@ -2196,6 +2224,9 @@
         "runtime": {
           "lib/dnxcore50/EntityFramework.Relational.Design.dll": {}
         }
+      },
+      "Facebook.Helper/1.0.0": {
+        "type": "package"
       },
       "Ix-Async/1.2.5": {
         "type": "package",
@@ -4814,6 +4845,9 @@
         "runtime": {
           "lib/dotnet5.4/System.Xml.XDocument.dll": {}
         }
+      },
+      "Twitter.Helper/1.0.0": {
+        "type": "package"
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
@@ -4939,6 +4973,9 @@
         "runtime": {
           "lib/dnx451/EntityFramework.Relational.Design.dll": {}
         }
+      },
+      "Facebook.Helper/1.0.0": {
+        "type": "package"
       },
       "Ix-Async/1.2.5": {
         "type": "package",
@@ -5915,35 +5952,57 @@
           "lib/net451/Microsoft.AspNet.Tooling.Razor.dll": {}
         }
       },
-      "Microsoft.AspNet.Web.Helpers.Mvc/2.0.20710": {
+      "Microsoft.AspNet.WebHelpers/3.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.WebPages": "[2.0.0, 2.1.0)"
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages.WebData": "[3.2.3, 3.3.0)"
         },
         "compile": {
-          "lib/net40/Microsoft.Web.Helpers.dll": {}
+          "lib/net45/Microsoft.Web.Helpers.dll": {}
         },
         "runtime": {
-          "lib/net40/Microsoft.Web.Helpers.dll": {}
+          "lib/net45/Microsoft.Web.Helpers.dll": {}
         }
       },
-      "Microsoft.AspNet.WebPages/2.0.20505": {
+      "Microsoft.AspNet.WebPages/3.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Razor": "2.0.20505",
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
           "Microsoft.Web.Infrastructure": "1.0.0"
         },
         "compile": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {}
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {}
         },
         "runtime": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {}
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages.Data/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/WebMatrix.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.Data.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages.WebData/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebPages.Data": null
+        },
+        "compile": {
+          "lib/net45/WebMatrix.WebData.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.WebData.dll": {}
         }
       },
       "Microsoft.AspNet.WebUtilities/1.0.0-rc1-final": {
@@ -6913,6 +6972,9 @@
         "runtime": {
           "lib/net45/_._": {}
         }
+      },
+      "Twitter.Helper/1.0.0": {
+        "type": "package"
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
@@ -7038,6 +7100,9 @@
         "runtime": {
           "lib/dnx451/EntityFramework.Relational.Design.dll": {}
         }
+      },
+      "Facebook.Helper/1.0.0": {
+        "type": "package"
       },
       "Ix-Async/1.2.5": {
         "type": "package",
@@ -8014,35 +8079,57 @@
           "lib/net451/Microsoft.AspNet.Tooling.Razor.dll": {}
         }
       },
-      "Microsoft.AspNet.Web.Helpers.Mvc/2.0.20710": {
+      "Microsoft.AspNet.WebHelpers/3.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.WebPages": "[2.0.0, 2.1.0)"
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages.WebData": "[3.2.3, 3.3.0)"
         },
         "compile": {
-          "lib/net40/Microsoft.Web.Helpers.dll": {}
+          "lib/net45/Microsoft.Web.Helpers.dll": {}
         },
         "runtime": {
-          "lib/net40/Microsoft.Web.Helpers.dll": {}
+          "lib/net45/Microsoft.Web.Helpers.dll": {}
         }
       },
-      "Microsoft.AspNet.WebPages/2.0.20505": {
+      "Microsoft.AspNet.WebPages/3.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Razor": "2.0.20505",
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
           "Microsoft.Web.Infrastructure": "1.0.0"
         },
         "compile": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {}
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {}
         },
         "runtime": {
-          "lib/net40/System.Web.Helpers.dll": {},
-          "lib/net40/System.Web.WebPages.Deployment.dll": {},
-          "lib/net40/System.Web.WebPages.dll": {},
-          "lib/net40/System.Web.WebPages.Razor.dll": {}
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages.Data/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/WebMatrix.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.Data.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages.WebData/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebPages.Data": null
+        },
+        "compile": {
+          "lib/net45/WebMatrix.WebData.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebMatrix.WebData.dll": {}
         }
       },
       "Microsoft.AspNet.WebUtilities/1.0.0-rc1-final": {
@@ -9012,6 +9099,9 @@
         "runtime": {
           "lib/net45/_._": {}
         }
+      },
+      "Twitter.Helper/1.0.0": {
+        "type": "package"
       }
     },
     "DNXCore,Version=v5.0/win7-x86": {
@@ -9112,6 +9202,9 @@
         "runtime": {
           "lib/dnxcore50/EntityFramework.Relational.Design.dll": {}
         }
+      },
+      "Facebook.Helper/1.0.0": {
+        "type": "package"
       },
       "Ix-Async/1.2.5": {
         "type": "package",
@@ -12237,6 +12330,9 @@
         "runtime": {
           "lib/dotnet5.4/System.Xml.XDocument.dll": {}
         }
+      },
+      "Twitter.Helper/1.0.0": {
+        "type": "package"
       }
     },
     "DNXCore,Version=v5.0/win7-x64": {
@@ -12337,6 +12433,9 @@
         "runtime": {
           "lib/dnxcore50/EntityFramework.Relational.Design.dll": {}
         }
+      },
+      "Facebook.Helper/1.0.0": {
+        "type": "package"
       },
       "Ix-Async/1.2.5": {
         "type": "package",
@@ -15462,6 +15561,9 @@
         "runtime": {
           "lib/dotnet5.4/System.Xml.XDocument.dll": {}
         }
+      },
+      "Twitter.Helper/1.0.0": {
+        "type": "package"
       }
     }
   },
@@ -15559,6 +15661,27 @@
         "lib/net451/EntityFramework.Relational.Design.dll",
         "lib/net451/EntityFramework.Relational.Design.xml",
         "lib/netcore50/_._"
+      ]
+    },
+    "Facebook.Helper/1.0.0": {
+      "type": "package",
+      "sha512": "nRBejOeanvBYuo1HbbQoeYRcDYG/npB5vhvlcsFy157RCSUXCTW8Wrfrd/WEjANZ9y6mAv5wGDjNmqZ+BklsYQ==",
+      "files": [
+        "content/App_Code/Facebook.cshtml",
+        "content/Facebook/Docs/content/images/FBCoreSettings.png",
+        "content/Facebook/Docs/content/images/FBCreateApplication.png",
+        "content/Facebook/Docs/content/images/webx-bkg.png",
+        "content/Facebook/Docs/content/images/webx-content-bkg.jpg",
+        "content/Facebook/Docs/content/images/webx-icon.png",
+        "content/Facebook/Docs/content/images/wm-mysite-settings.png",
+        "content/Facebook/Docs/content/images/wm-site-settings.png",
+        "content/Facebook/Docs/content/Site.css",
+        "content/Facebook/Docs/reference.htm",
+        "content/Facebook/Docs/startHere.htm",
+        "content/Facebook/Login.cshtml",
+        "Facebook.Helper.1.0.0.nupkg",
+        "Facebook.Helper.1.0.0.nupkg.sha512",
+        "Facebook.Helper.nuspec"
       ]
     },
     "Ix-Async/1.2.5": {
@@ -16249,31 +16372,59 @@
         "Microsoft.AspNet.Tooling.Razor.nuspec"
       ]
     },
-    "Microsoft.AspNet.Web.Helpers.Mvc/2.0.20710": {
+    "Microsoft.AspNet.WebHelpers/3.2.3": {
       "type": "package",
-      "sha512": "7vvVapm/jo0yljuMnCUujQHoU8NS/u0mAoAbvhy26KUUZlLtDcO12FIUrxepqJvnefYdYmeuU2c7eyNYFEmJDg==",
+      "serviceable": true,
+      "sha512": "vGWL9M4UIzgEUoy8ErNc6B9VtKGNDNEFJaJRRzQMfxLLFi+zGGgvh3SEz8iP1Xgt52zJkcGrJuQl4CyxDuP2uA==",
       "files": [
-        "lib/net40/Microsoft.Web.Helpers.dll",
-        "Microsoft.AspNet.Web.Helpers.Mvc.2.0.20710.nupkg",
-        "Microsoft.AspNet.Web.Helpers.Mvc.2.0.20710.nupkg.sha512",
-        "Microsoft.AspNet.Web.Helpers.Mvc.nuspec"
+        "lib/net45/Microsoft.Web.Helpers.dll",
+        "Microsoft.AspNet.WebHelpers.3.2.3.nupkg",
+        "Microsoft.AspNet.WebHelpers.3.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebHelpers.nuspec"
       ]
     },
-    "Microsoft.AspNet.WebPages/2.0.20505": {
+    "Microsoft.AspNet.WebPages/3.2.3": {
       "type": "package",
-      "sha512": "/eILBjvoH9y3DqTZO3HX0HHyocyQPzdR125lVxSVHJUQq6NosyYS9BdcLlug9c7qYtVkDcUDxQRhHTBnDqC1VA==",
+      "serviceable": true,
+      "sha512": "zbtxBERla5RE/mhftwbrXOzc0r6lh8WcnjpGW7QQe+PvSDDx1BgsTUGzfCXO/vJznHNpY5oCSYLt8Q5vUu7F0g==",
       "files": [
-        "lib/net40/System.Web.Helpers.dll",
-        "lib/net40/System.Web.Helpers.xml",
-        "lib/net40/System.Web.WebPages.Deployment.dll",
-        "lib/net40/System.Web.WebPages.Deployment.xml",
-        "lib/net40/System.Web.WebPages.dll",
-        "lib/net40/System.Web.WebPages.Razor.dll",
-        "lib/net40/System.Web.WebPages.Razor.xml",
-        "lib/net40/System.Web.WebPages.xml",
-        "Microsoft.AspNet.WebPages.2.0.20505.nupkg",
-        "Microsoft.AspNet.WebPages.2.0.20505.nupkg.sha512",
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "lib/net45/System.Web.Helpers.dll",
+        "lib/net45/System.Web.Helpers.xml",
+        "lib/net45/System.Web.WebPages.Deployment.dll",
+        "lib/net45/System.Web.WebPages.Deployment.xml",
+        "lib/net45/System.Web.WebPages.dll",
+        "lib/net45/System.Web.WebPages.Razor.dll",
+        "lib/net45/System.Web.WebPages.Razor.xml",
+        "lib/net45/System.Web.WebPages.xml",
+        "Microsoft.AspNet.WebPages.3.2.3.nupkg",
+        "Microsoft.AspNet.WebPages.3.2.3.nupkg.sha512",
         "Microsoft.AspNet.WebPages.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebPages.Data/3.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "zToIPCRIo5CHGHqIXmR9Po5hzyuXQy7eDSdougxDrEM6aqIK5bFE6/ZWNeY+KfGLmjmGGcv+J7BwCn74vYvxGw==",
+      "files": [
+        "lib/net45/WebMatrix.Data.dll",
+        "lib/net45/WebMatrix.Data.xml",
+        "Microsoft.AspNet.WebPages.Data.3.2.3.nupkg",
+        "Microsoft.AspNet.WebPages.Data.3.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebPages.Data.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebPages.WebData/3.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "yCmVtepryxxHdb7r4E4sfINS8mmyGTwSZriZrxdhsJUOmx3KwT6GbdMkQJjbd3mJXspu8liiwCfT5TcyOS3Fqg==",
+      "files": [
+        "lib/net45/WebMatrix.WebData.dll",
+        "lib/net45/WebMatrix.WebData.xml",
+        "Microsoft.AspNet.WebPages.WebData.3.2.3.nupkg",
+        "Microsoft.AspNet.WebPages.WebData.3.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebPages.WebData.nuspec"
       ]
     },
     "Microsoft.AspNet.WebUtilities/1.0.0-rc1-final": {
@@ -21298,12 +21449,23 @@
         "System.Xml.XDocument.4.0.11-beta-23516.nupkg.sha512",
         "System.Xml.XDocument.nuspec"
       ]
+    },
+    "Twitter.Helper/1.0.0": {
+      "type": "package",
+      "sha512": "93Q3PGm51II3JrcMF4EJ/fgj9V6f7pAYIMnp2stcX0V+l4QA2tgRhg6+cv46Ao2HFk9dsMivuCKhkWWO34fUxw==",
+      "files": [
+        "Content/App_Code/TwitterGoodies.cshtml",
+        "Twitter.Helper.1.0.0.nupkg",
+        "Twitter.Helper.1.0.0.nupkg.sha512",
+        "Twitter.Helper.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "EntityFramework.Commands >= 7.0.0-rc1-final",
       "EntityFramework.MicrosoftSqlServer >= 7.0.0-rc1-final",
+      "Facebook.Helper >= 1.0.0",
       "Microsoft.AspNet.Authentication.Cookies >= 1.0.0-rc1-final",
       "Microsoft.AspNet.Diagnostics.Entity >= 7.0.0-rc1-final",
       "Microsoft.AspNet.Identity.EntityFramework >= 3.0.0-rc1-final",
@@ -21320,10 +21482,12 @@
       "Microsoft.Extensions.Logging >= 1.0.0-rc1-final",
       "Microsoft.Extensions.Logging.Console >= 1.0.0-rc1-final",
       "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc1-final",
-      "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final"
+      "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final",
+      "Twitter.Helper >= 1.0.0"
     ],
     "DNX,Version=v4.5.1": [
-      "Microsoft.AspNet.Web.Helpers.Mvc >= 2.0.20710"
+      "Microsoft.AspNet.WebHelpers >= 3.2.3",
+      "Microsoft.AspNet.WebPages.Data >= 3.2.3"
     ],
     "DNXCore,Version=v5.0": []
   }
