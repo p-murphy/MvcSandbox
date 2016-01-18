@@ -35,5 +35,10 @@ namespace MvcSandbox.Controllers
         {
             return View();
         }
+
+        public IActionResult BlenderScripting()
+        {
+            return View();
+        }
     }
 }
