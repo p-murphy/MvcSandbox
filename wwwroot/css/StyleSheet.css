@@ -1,6 +1,12 @@
 ﻿body {
+    background-color:gray;
 }
 
 p{
     font-family: 'Times New Roman', Times, serif
+}
+
+div img{
+    border-color: red;
+    border-width: thick;
 }
