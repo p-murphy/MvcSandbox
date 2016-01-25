@@ -1,12 +1,14 @@
 ﻿body {
-    background-color:gray;
+    background-image: url("../images/About/cork.jpg");
+    background-size: 30%;
 }
 
 p{
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    padding: 7px;
 }
 
 div img{
-    border-color: red;
-    border-width: thick;
+padding:10px; background-color:blue; transform:rotate(3deg);
 }
