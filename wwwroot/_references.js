@@ -1,5 +1,6 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="../gulpfile.js" />
+/// <reference path="js/demo.js" />
 /// <reference path="js/jquery-2.2.0.js" />
 /// <reference path="js/site.js" />
 /// <reference path="js/snap.js" />

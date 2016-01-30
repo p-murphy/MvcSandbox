@@ -12,7 +12,7 @@
 
 /* Show the "Drag" background in the demo */
 #content {
-	background: #BFC7D8 url(drag.png) center 75% no-repeat;
+	background: #BFC7D8 url("../images/drag.png") center 75% no-repeat;
 }
 
 /* Demo toolbar styles */
